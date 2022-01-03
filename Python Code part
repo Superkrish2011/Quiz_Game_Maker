@@ -1,0 +1,39 @@
+Score = 0
+print("Welcome to my computer quiz!")
+playing = input("Do you want to play? ")
+if playing.lower() != "yes":
+    quit()
+print("Okay! Let's play :)")
+answer = input("What does CPU stand for? ")
+if answer.lower() == "central processing unit":
+    print('Correct!')
+    Score += 1
+else:
+    print("Incorrect!")
+answer = input("What does GPU stand for? ")
+if answer.lower() == "graphics processing unit":
+    print('Correct!')
+    Score += 1
+else:
+    print("Incorrect!")
+answer = input("What is the code to stop the program? ")
+if answer.lower() == "quit()":
+    print('Correct!')
+    Score += 1
+else:
+    print("Incorrect!")
+answer = input("What piece of code asks the user a question that they answer by typing it in? ")
+if answer.lower() == "input()":
+    print('Correct!')
+    Score += 1
+else:
+    print("Incorrect!")
+answer = input("What does UI stand for? ")
+if answer.lower() == "user interface":
+    print('Correct!')
+    Score += 1
+else:
+    print("Incorrect!")
+
+print("You got " + str(Score) + " questions correct!")
+print("You got " + str((Score / 5)*100) + "% right!")
